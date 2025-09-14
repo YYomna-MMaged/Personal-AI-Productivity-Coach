@@ -35,7 +35,7 @@ def retrieve(query, collection, n_results = 5):
     for doc, meta in zip(results['documents'][0], results['metadatas'][0]):
         retrieved.append({'text' : doc, 'source' : meta.get('source', 'unkown')})
 
-    return retrieved
+    return "\n".join(retrieved)
 
 if __name__ == "__main__":
     coll = get_collection()
