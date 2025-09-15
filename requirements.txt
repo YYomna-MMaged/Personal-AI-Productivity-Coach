@@ -1,0 +1,13 @@
+transformers>=4.30
+sentence-transformers
+faiss-cpu
+langchain
+chromadb
+openai # if using OpenAI
+streamlit
+tiktoken
+datasets    
+accelerate
+bitsandbytes
+torch
+chromadb
