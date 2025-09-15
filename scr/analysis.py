@@ -1,10 +1,10 @@
-from llm_prompts import daily_analysis_prompt, task_organization_prompt
+from scr.llm_prompts import daily_analysis_prompt, task_organization_prompt
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import torch
 
 
 from huggingface_hub import login
-login("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")
+login()
 
 model_name = "mistralai/Mistral-Nemo-Instruct-2407"
 tok = AutoTokenizer.from_pretrained(model_name, use_fast=True)
